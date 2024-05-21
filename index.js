@@ -12,7 +12,7 @@ const app = express()
 app.use(fileupload())
 app.use(cors())
 app.use(express.json())
-app.use(express.static(path.join(__dirname, 'static')))
+app.use(express.static(path.join(__dirname, 'src/static')))
 app.use(router)
 
 
