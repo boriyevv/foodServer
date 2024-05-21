@@ -13,7 +13,7 @@ const fetch = async (sqlQuery, ...params) => {
 	} catch (error) {
 		throw new Error(error)
 	} finally {
-		await client.release()
+		client.release()
 	}
 }
 
@@ -25,7 +25,7 @@ const fetchAll = async (sqlQuery, ...params) => {
 	} catch (error) {
 		throw new Error(error)
 	} finally {
-		await client.release()
+		client.release()
 	}
 }
 

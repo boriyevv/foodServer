@@ -1,7 +1,4 @@
-const { not } = require("joi");
 const Joi = require("joi");
-
-
 
 exports.foodUpdateSchema = Joi.object({
     name: Joi.string().min(3).max(20).required(),

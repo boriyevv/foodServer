@@ -1,5 +1,4 @@
 const { fetch , fetchAll } = require('../../lib/connectdb')
-const path = require('path')
 const { GET_ALL}  =require('./model')
 
 class CategoryModel {
@@ -12,9 +11,6 @@ class CategoryModel {
             throw new Error(e)
         }
     }
-
-    
-    
 }
 
 module.exports = new CategoryModel()
